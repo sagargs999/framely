@@ -87,4 +87,23 @@ The app opens at http://localhost:8501.
 app/fast_api_proj/
 ├── app.py        # FastAPI app and routes
 ├── db.py         # SQLAlchemy models and session setup
-├── users.py
+├── users.py      # Authentication and user manager
+├── images.py     # Media upload handling
+└── schemas.py    # Pydantic schemas
+frontend.py       # Streamlit UI
+```
+
+## Notes
+
+- The SQLite database (`test.db`) is created automatically on first run.
+- If you change the models after the database exists, delete `test.db` and restart (no migrations yet).
+
+## Roadmap
+
+- Alembic migrations
+- Likes and comments
+- User profiles
+
+## License
+
+MIT <!-- add a LICENSE file or remove this line -->
